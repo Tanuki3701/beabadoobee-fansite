@@ -1,32 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- head設定瀏覽器看的資訊(不直接顯示於網頁) -->
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>beabadoobee Asia Tour 2025 Taiwan Support</title>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <!-- 設定手機RWD響應式 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!-- 瀏覽器分頁顯示名稱 -->
+    <title>Beabadoobee Asia Tour 2025 Taiwan Support</title> 
+    <!-- 匯入CSS樣式表 -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <!-- Header(網站標題及導覽列) -->
     <header>
-        beabadoobee Asia Tour 2025 台灣應援站
+        <!-- 最大標題 -->
+        <h1>Beabadoobee Asia Tour 2025 台灣應援站</h1>
+        <!-- 導覽列(<a href="#id"> 對應跳轉到同頁特定區塊) -->
+        <nav>
+            <a href="#countdown">Countdown</a>
+            <a href="#support">Support Info</a>
+            <a href="lyrics">Lyrics</a>
+        </nav>
     </header>
 
-    <section class="countdown">
-        演唱會倒數：<span id="timer">Loading...</span>
+    <!-- Banner區(主視覺圖片、slogan) -->
+    <section class="banner">
+        <p>(預留放置Banner圖片)</p>
+    </section> 
+
+    <!-- Countdown倒數計時區 -->
+    <section class="countdown" id="countdown">
+        <!-- 次標題表本區塊主題 -->
+        <h2>演唱會倒數計時</h2>
+        <div id="timer">Loading...</div>
     </section>
 
-    <section class="message-box">
-        <h2>留言牆</h2>
-        <textarea id="messageInput" rows="4" placeholder="寫下你想對 beabadoobee 說的話..." style="width: 100%;"></textarea><br>
-        <button onclick="postMessage()">送出留言</button>
-        <div id="messages"></div>
+    <!-- Support Info官方應援資訊區 -->
+    <setction class="support" id="support">
+        <h2>Support Info</h2>
+        <button>Spotify</button>
+        <button>AppleMusic</button>
+        <button>YouTube</button>
+        <button>Instagram</button>
+        <button>Facebook</button>
+        <button>X</button>
+    </setction>
+
+    <!-- YouTube Video -->
+    <section class="video">
+        <h2>Music Video</h2>
+        <p>(預留Youtube嵌入區塊)</p>
     </section>
 
+    <!-- Lyrics -->
+    <section class="lyrics" id="lyrics">
+        <h2>Lyrics Interaction Zone</h2>
+        <p class="lyrics-text">(預留歌詞文字)</p>
+    </section>
+
+    <!-- Footer區(網頁底部) -->
     <footer>
-        © 2025 beabadoobee Taiwan Support Site
+        © 2025 Beabadoobee Taiwan Support Site
     </footer>
 
-    <script src="script.js"></script>
+    <!-- 匯入JavaScript -->
+    <sceipt src="script.js"></sceipt>
 </body>
 </html>
+
